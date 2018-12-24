@@ -1,0 +1,232 @@
+<html>
+    <head>
+    <title>Signup</title>
+    <style>
+        .myTheme:hover
+        {
+            background:#7FFFD4;
+            color:white;
+            font-family:arial;
+        }
+        .myTheme2:hover{
+            background:#E0FFFF;
+            color:#DAA520;
+            font-family:arial;
+        }
+        .myTheme3{
+            background:white;
+            
+        }
+        input{
+            border:none;
+            background:transparent;
+        }
+        .myTheme4{
+          
+            
+            background:#CAD0D6;
+            color:#DAA520;
+            
+        }
+             a{
+                color:black;
+                text-decoration: none;
+              }
+              textarea{
+                  border:none;
+              }
+              select{
+                  border:none;
+              }
+        .back{
+            background:url("images/white3.jpeg");
+            background-repeat:no-repeat;
+        }
+        
+    </style>
+    <script>
+        function validation(form)
+        {
+            if(form.id.value.length==0)
+            {
+                alert("id is required");
+                return false;
+            }
+            if(form.name.value.length==0)
+            {   alert("name is required");
+                return false;
+            }
+            if(form.pwd.value.length==0)
+            {   alert("password is required");
+                return false;
+            }
+            
+        }
+    </script>
+    </head>
+    <body class="back">
+        <table border="0" width="100%" style="opacity:0.8;">
+        <tr>
+            <td width="20%"> <img src="images/myicon.png"  alt="LOGO" ></td>
+             <td width="100%">
+                <table width="50%" border="0"  cellpadding="10" align="right">
+                    <tr align="center">
+                        <td class="myTheme2"><a href="">24*7</a></td>
+                        <td class="myTheme2"><a href="">Complain</a></td>
+                        <td class="myTheme2"><a href="">About</a></td>
+                        <td class="myTheme2"><a href="">Login</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                        <marquee scrollamount="8" behavior="slide">
+                        <font color=black size="2pt">Welcome To The Store</font>
+                        </marquee>
+                        </td>
+                    </tr>
+                </table>
+             </td>
+        </tr>
+    </table>
+        <table width="100%" style="opacity:0.8;">
+                <tr bgcolor=#00BFFF align="center">
+                    <td class="myTheme"><a href="loginPage.jsp"> Home</a></td>
+                    <td class="myTheme"><a href=""> About</a></td>
+                    <td class="myTheme"><a href="">Services</a></td>
+                    <td class="myTheme"><a href=""> Customer care</a></td>
+                    <td class="myTheme"><a href=""> Contact us</a></td> 
+                    <td class="myTheme"><a href="signUp.html">Register</a></td> 
+                </tr>
+        </table>
+    <div style="background-color: lightblue ;opacity: 0.91;" >
+      <form action="signUp.jsp">
+        <table border="0"  cellpadding="20" cellspacing="12" align="center" width="">
+            <tr align="center">
+                <td colspan="2"> CUSTOMER SIGN UP</td>
+            </tr>
+            <tr>
+                <td>User Id</td>
+                <td><input type="text"  name="id"><hr></td>
+            </tr>
+            <tr>
+                <td>NAME</td>
+                <td><input type="text"  name="name"><hr></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gender" value="F">Female</td>
+                <td><input type="radio" name="gender" value="M">Male</td>
+               
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>
+                    <select name="city">
+                    <option>Select city</option>
+                    <option>Indore</option>
+                    <option>Bhopal</option>
+                    
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload photo</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+            <td>Password</td>
+            <td><input type="password" name="pwd"><hr></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                   <input type="submit"  style="background:url(images/sub2.jpg);width: 120px; height: 35px; " value="" onclick="validation(form);">
+                </td>
+                <td colspan="2">
+                    <input type="reset" style="background:url(images/reset.jpg);width: 120px; height: 35px; " value="" >
+                </td>
+            </tr>
+        </table>
+      </form>
+    </div>
+        <div class="myTheme4" style="opacity:0.91;">
+        <table border="0" width="100%" cellpadding="10" >
+            <tr align="center">
+                <td >
+                    <b>Company</b>
+                </td>
+                <td >
+                   <b>Need Help</b>
+                </td>
+                <td>
+                    <b>Terms & Conditions</b>
+                </td>
+                <td>
+                    <b>Policy Information</b>
+                </td>
+            </tr >
+            <tr align="center">
+                <td  >
+                     <a href="">About us</a>
+                </td>
+                <td>
+                   <a href="">FAQ</a>
+                </td>
+                <td>
+                   <a href="">Terms</a>
+                </td>
+                 <td>
+                   <a href="">Privacy policy</a>
+                </td>
+                
+                
+            </tr>
+            <tr align="center">
+                <td>
+                    <a href="">Our Location</a>
+                </td>
+                <td><a href="">Contact us</a></td>
+                <td>
+                   <a href="">News Letter Subcription</a>
+                </td>
+                 <td>
+                   <a href="">Return & refund Policy</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                   <a href="">Construction services</a>
+                </td>
+                <td>
+                   <a href=""></a>
+                </td>
+                <td>
+                   <a href="">blog</a>
+                </td>
+                <td>
+                   <a href="">Take Down Policy</a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                   <a href=""></a>
+                </td>
+                <td>
+                   <a href=""></a>
+                </td>
+                <td>
+                   <a href="">Report Abuse</a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+
+<footer>
+    <p align="center" >Copyright &copy;2018 BuildHomeMart.All Rights Reserved</p>
+</footer>
+        </body>
+</html>
+  
